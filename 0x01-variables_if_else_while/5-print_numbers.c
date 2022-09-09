@@ -7,6 +7,6 @@
 int main(){
 int count =0;
 while(count < 10)
-printf("%d", count++);
+printf("%d\n", count++);
 return 0;
 }
