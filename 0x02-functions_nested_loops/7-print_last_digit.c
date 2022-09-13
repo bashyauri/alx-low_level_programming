@@ -14,7 +14,7 @@ int a;
 n = abs(n);
 
 a = n % 10;
- if(a < 0)
+if(a < 0)
 a = -a;
 _putchar(a + '0');
 
