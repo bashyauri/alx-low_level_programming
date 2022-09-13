@@ -1,7 +1,8 @@
 #include "main.h"
 /**
-*Description:'output whether an integer is less than or greater than zero'
-*Return: Always 0 (Success)
+* main - check the code
+*
+* Return: Always 0.
 */
 void print_alphabet(void)
 {
