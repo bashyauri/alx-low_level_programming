@@ -1,7 +1,7 @@
 #include "main.h"
 /**
-* my_function - does my stuff
-* @my_arg: its mine damnit
+* print_alphabet - does my stuff
+*
 *Description: Does my stuff explained.
 */
 void print_alphabet(void)
