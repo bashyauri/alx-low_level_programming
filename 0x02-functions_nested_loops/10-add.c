@@ -5,9 +5,7 @@
 * @x: number being added
 *
 * @y: number being added
-*
-* @sum: sum of two numbers
-*
+*y
 * Return: Always 0.
 *
 */
