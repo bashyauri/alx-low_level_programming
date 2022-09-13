@@ -1,8 +1,7 @@
 #include "main.h"
 /**
-* main - Entry point
-*Description: - prints output
-* Return: Always 0 (Success)
+*Description:'output whether an integer is less than or greater than zero'
+*Return: Always 0 (Success)
 */
 void print_alphabet(void)
 {
