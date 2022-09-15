@@ -51,13 +51,13 @@ return (1);
 }
 }
 /**
- * biggestFactor - returns the biggest prime factor of a number
- * @a: number to check
- * Return: biggest factor
- */
+* biggestFactor - returns the biggest prime factor of a number
+* @a: number to check
+* Return: biggest factor
+*/
 long int biggestFactor(long int a)
 {
-  long int i, factor;
+long int i, factor;
 
 factor = a;
 for (i = 2; i <= factor; i++)
