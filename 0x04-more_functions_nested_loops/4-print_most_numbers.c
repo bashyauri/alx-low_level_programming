@@ -17,5 +17,4 @@ continue;
 _putchar(numbers); 
 }
 _putchar('\n');
-  
 }
