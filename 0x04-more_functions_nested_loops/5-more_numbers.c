@@ -1,10 +1,8 @@
 #include "main.h"
 
 /**
-* more_numbers - entry point
-* Description: Prints the numbers with _putchar
-*
-* Return: void
+* more_numbers - checks for a digit (0 through 9)
+* Return: (0)
 */
 void more_numbers(void)
 {
