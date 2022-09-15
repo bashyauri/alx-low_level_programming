@@ -6,10 +6,10 @@
 *
 * Return: void
 */
-int main() {
-  // Write C code here
+int main(void)
+{
 int i;
-for(int i = 1; i <= 100; i++)
+for(i = 1; i <= 100; i++)
 {
 if (i % 15 == 0)
 {
