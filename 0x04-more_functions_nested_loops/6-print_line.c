@@ -1,10 +1,8 @@
 #include "main.h"
 /**
-* print_line - entry point
-*
-* Description: Prints lines
-*@n: number of lines
-* Return: void
+* print_line - print lines
+* @n: number of lines
+* Return: (0)
 */
 void print_line(int n)
 {
