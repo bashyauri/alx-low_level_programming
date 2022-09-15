@@ -16,6 +16,6 @@ if (numbers == '2' || numbers == '4')
 continue;
 _putchar(numbers); 
 }
- _putchar('\n');
+_putchar('\n');
   
 }
