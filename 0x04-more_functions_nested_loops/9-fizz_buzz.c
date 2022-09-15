@@ -1,10 +1,7 @@
 #include <stdio.h>
 /**
-* main - entry point
-*
-* Description: prints FizzBuzz
-*
-* Return: void
+* main - prints the numbers from 1 to 100
+* Return: (0)
 */
 int main(void)
 {
