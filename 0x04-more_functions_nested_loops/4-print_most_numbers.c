@@ -14,7 +14,7 @@ for (numbers = '0'; numbers <= '9'; numbers++)
 {
 if (numbers == '2' || numbers == '4')
 continue;
-_putchar(numbers); 
+_putchar(numbers);
 }
 _putchar('\n');
 }
