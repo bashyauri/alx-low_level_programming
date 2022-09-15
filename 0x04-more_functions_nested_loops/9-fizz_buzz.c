@@ -26,9 +26,13 @@ else
 printf("%d", i);
 }
 if (n < 100)
+{
 printf(" ");
-else
+}
+ else
+ {
 printf("\n");
+}
 }
 return (0);
 }
