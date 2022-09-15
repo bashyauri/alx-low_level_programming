@@ -5,7 +5,7 @@
 * @c: alphabet
 * Return: (0)
 */
-int int _isupper(int c)
+int _isupper(int c)
 {
 for (char ch = 'A'; ch <= 'Z'; ch++)
 if (ch == c)
