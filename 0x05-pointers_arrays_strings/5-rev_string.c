@@ -12,6 +12,9 @@ while (*(s + i))
 i++;
 }
 for(i--; i >= 0; i--)
-printf("%c\n", *(s + i));
+{
+printf("%c", *(s + i));
+}
+printf("\n");
 }
 
