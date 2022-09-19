@@ -13,8 +13,7 @@ i++;
 }
 for(i--; i >= 0; i--)
 {
-printf("%c", *(s + i));
+putchar(*(s + i));
 }
-printf("\n");
 }
 
