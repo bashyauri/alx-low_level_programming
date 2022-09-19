@@ -6,14 +6,6 @@
 */
 void _puts(char *str)
 {
-char* ch;
-int i;
+  printf("%sn\n", str);
 
-ch = str;
-
-for (i = 0; ch[i]; i++)
-{
-_putchar (ch[i]);
-}
-_putchar('\n');
 }
