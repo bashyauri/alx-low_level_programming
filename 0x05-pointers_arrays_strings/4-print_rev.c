@@ -1,0 +1,17 @@
+#include "main.h"
+/**
+* print_rev -  prints a string, in reverse, followed by a new line.
+* @s: number tested
+* Return: Always 0.
+*/
+void print_rev(char *s)
+{
+int i = 0;
+while (*(str + i))
+{
+i++;
+}
+for (i--; i >= 0; i--)
+putchar(*(str + i));
+putchar('\n');
+}
