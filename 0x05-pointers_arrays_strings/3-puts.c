@@ -1,6 +1,6 @@
 #include "main.h"
 /**
-* print_number - prints a string, followed by a new line, to stdout.
+*_puts - prints a string, followed by a new line, to stdout.
 * @str: number tested
 * Return: Always 0.
 */
