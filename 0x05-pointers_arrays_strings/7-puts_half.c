@@ -17,7 +17,7 @@ i++;
 last = (i + 1) / 2;
 for (i = last; str[i]; i++)
 {
-putchar (str[i]
+putchar (str[i]);
 }
 putchar ('\n');
 }
