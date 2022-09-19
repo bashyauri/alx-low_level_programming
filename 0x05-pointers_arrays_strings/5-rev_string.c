@@ -12,6 +12,6 @@ while(*(s + i))
 i++;
 }
 for(i--; i >= 0; i--)
-putchar(*(s + i));
+printf("%c", *(s + i));
 }
-}
+
