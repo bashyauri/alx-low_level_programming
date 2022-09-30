@@ -18,3 +18,4 @@ number++;
 (*argv)++;
 }
 return (0);
+}
