@@ -1,50 +1,73 @@
 #include <stdlib.h>
+#include "main.h"
 
 /**
- * argstostr - Concatenates all the arguments of the program
+ * count_word - helper function to count the number of words in a string
+ * @s: string to evaluate
  *
- * @ac: Argument total count
- *
- * @av: Pointer to arguments
- *
- * Return: Pointer to concatenated string (SUCCESS) or
- * NULL if @ac == 0 or @av == NULL (FAILURE) or
- * NULL if if insufficient memory was available (FAILURE)
+ * Return: number of words
 */
-
-char *argstostr(int ac, char **av)
+int count_word(char *s)
 {
-int i, j;
-int count = 0;
-int t_count = 0;
-char *result;
+int flag, c, w;
 
-if (ac == 0 || av == NULL)
-return ('\0');
+flag = 0;
+w = 0;
 
-for (i = 0; i < ac; i++)
+for (c = 0; s[c] != '\0'; c++)
 {
-for (j = 0; av[i][j] != '\0'; j++)
-t_count++;
-t_count++;
+if (s[c] == ' ')
+flag = 0;
+else if (flag == 0)
+{
+flag = 1;
+w++;
+}
 }
 
-result = malloc(sizeof(char) * t_count + 1);
-
-if (result == NULL)
-{
-return ('\0');
+return (w);
 }
-
-for (i = 0; i < ac; i++)
+/**
+ * **strtow - splits a string into words
+ * @str: string to split
+ *
+ * Return: pointer to an array of strings (Success)
+ * or NULL (Error)
+*/
+char **strtow(char *str)
 {
-for (j = 0; av[i][j] != '\0'; j++)
-{
-result[count++] = av[i][j];
-}
-result[count++] = '\n';
-}
+char **matrix, *tmp;
+int i, k = 0, len = 0, words, c = 0, start, end;
 
-result[t_count] = '\0';
-return (result);
+while (*(str + len))
+len++;
+words = count_word(str);
+if (words == 0)
+return (NULL);
+
+matrix = (char **) malloc(sizeof(char *) * (words + 1));
+if (matrix == NULL)
+return (NULL);
+for (i = 0; i <= len; i++)
+{
+if (str[i] == ' ' || str[i] == '\0')
+{
+if (c)
+{
+end = i;
+tmp = (char *) malloc(sizeof(char) * (c + 1));
+if (tmp == NULL)
+return (NULL);
+while (start < end)
+*tmp++ = str[start++];
+*tmp = '\0';
+matrix[k] = tmp - c;
+k++;
+c = 0;
+}
+}else if (c++ == 0)
+start = i;
+}
+matrix[k] = NULL;
+return (matrix);
 }
