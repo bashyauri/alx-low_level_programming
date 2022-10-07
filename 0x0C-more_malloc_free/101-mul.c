@@ -1,5 +1,3 @@
-#include <stdio.h>
-#include <stdlib.h>
 #include "main.h"
 
 /**
@@ -28,7 +26,7 @@ exit(98);
 }
 }
 }
-mul = atol(argv[1]) *  atol(argv[2]);
+mul = atol(argv[1]) * atol(argv[2]);
 printf("%lu\n", mul);
 return (0);
 }
